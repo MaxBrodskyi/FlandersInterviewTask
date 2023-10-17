@@ -1,0 +1,81 @@
+.authorizationPage {
+  height: 100vh;
+  z-index: 100;
+}
+.backgroundFull {
+  background-image: url('https://im-mining.com/site/wp-content/uploads/2022/05/49592058341_d5f6a98c39_k.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 50;
+  height: 100vh;
+
+  opacity: 1;
+}
+
+.gridContainer {
+  padding-top: 50px;
+}
+
+.loginForm {
+  /* background-color: rgba(255, 255, 255, 0.546); */
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 400px;
+}
+.inputBox {
+  max-width: 300px;
+  width: 300px;
+  height: 36px;
+  background-color: white;
+  border: 1px solid #95bce2;
+  border-radius: 2px;
+}
+.btnContainer {
+  display: flex;
+  justify-content: end;
+}
+.signInBtn {
+  color: black;
+  background-color: white;
+  border: 1px solid #95bce2;
+  border-radius: 2px;
+  width: 100px;
+  height: 36px;
+}
+
+.signInBtn:hover {
+  background-color: #95bce2;
+  border: 2px solid #95bce2;
+}
+
+.signInBtn:active {
+  background-color: #2f5e8e;
+  border: 2px solid #2f5e8e;
+}
+.btnContainer {
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .inputBox {
+    max-width: unset;
+    width: 100%;
+  }
+  .loginForm {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    width: 100%;
+  }
+  .btnContainer {
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+  }
+}
